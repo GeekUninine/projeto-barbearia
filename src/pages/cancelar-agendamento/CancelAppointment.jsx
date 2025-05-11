@@ -19,7 +19,7 @@ function CancelarAgendamento() {
 
     try {
       const response = await fetch(
-        `projeto-barbearia-production.up.railway.app/cancelar-agendamento/${idAgendamento}`,
+        `https://projeto-barbearia-production.up.railway.app/cancelar-agendamento/${idAgendamento}`,
         {
           method: "DELETE",
         }
