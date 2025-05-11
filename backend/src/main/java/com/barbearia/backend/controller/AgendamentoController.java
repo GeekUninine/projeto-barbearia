@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.Optional;
 
 @RestController
-@CrossOrigin(origins = "*") 
+@CrossOrigin(origins = "https://projeto-barbearia-7iyi.vercel.app") 
 public class AgendamentoController {
 
     @Autowired
@@ -29,7 +29,7 @@ public class AgendamentoController {
                 "<p>Segue o serviço agendado:</p>" +
                 "<ul><li>%s</li></ul>" +
                 "<p>O código do seu agendamento é: <strong>%d</strong></p>" +
-                "<p>Para cancelar, acesse <a href=\"https://web-barber-phi.vercel.app/cancelar-agendamento\">Cancelar Agendamento</a> e insira o código.</p>" +
+                "<p>Para cancelar, acesse <a href=\"https://projeto-barbearia-7iyi.vercel.app/cancelar-agendamento\">Cancelar Agendamento</a> e insira o código.</p>" +
                 "<p>A barbearia Ramos agradece a preferência. Venha ficar novo de novo!</p>",
                 agendamento.getNomeCliente(),
                 agendamento.getDataAgendamento(),
