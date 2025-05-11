@@ -19,7 +19,7 @@ function CancelarAgendamento() {
 
     try {
       const response = await fetch(
-        `https://projeto-barbearia-7iyi.vercel.app/cancelar-agendamento/${idAgendamento}`,
+        `projeto-barbearia-production.up.railway.app/cancelar-agendamento/${idAgendamento}`,
         {
           method: "DELETE",
         }

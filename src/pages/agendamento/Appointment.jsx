@@ -51,7 +51,7 @@ function Agendamento() {
     //envia dados para o banco de dados
     try {
       const response = await fetch(
-        "https://projeto-barbearia-7iyi.vercel.app/agendar",
+        "projeto-barbearia-production.up.railway.app/agendar",
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
