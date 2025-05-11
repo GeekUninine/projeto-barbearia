@@ -1,28 +1,39 @@
+import { useEffect } from "react";
 import Active from "../../header/Active";
-import SliderText from "../../components/SliderText";
-import Sobre from "../../components/Sobre";
-import MainProduct from "../../components/MainProduct";
 import Footer from "../../footer/Footer";
-import Mapa from "../../components/Maps";
-import InfoProds from "../../components/Prods";
-import Depoiments from "../../components/Depoiments";
-import "../../styles/style.css";
+import produtosData from "../../data/produtos.json";
 
-function Home() {
+function Produtos() {
+  useEffect(() => {
+    document.title = "Produtos - Barbearia Ramos";
+  }, []);
+
   return (
     <>
-      <div className="back">
+      <div className="back2">
         <Active />
-        <SliderText />
       </div>
-      <Sobre />
-      <MainProduct />
-      <Mapa />
-      <InfoProds />
-      <Depoiments />
+      <div className="info-prods">
+        <h2>Nossos Produtos</h2>
+        <p>
+          Confira alguns de nossos produtos, damos desconto caso compre em
+          grande quantidade.
+        </p>
+      </div>
+      <div className="catalog-prods">
+        {produtosData.map((item) => (
+          <div className="produtos2" key={item.id}>
+            <img src={item.imagem} alt={item.produto}></img>
+            <h2>{item.produto}</h2>
+            <h3>{item.preco}</h3>
+            <a href="https://bit.ly/3EWrNiw" target="_blank">Comprar Agora</a>
+          </div>
+        ))}
+        
+      </div>
       <Footer />
     </>
   );
 }
 
-export default Home;
+export default Produtos;
