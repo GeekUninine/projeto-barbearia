@@ -19,7 +19,7 @@ function CancelarAgendamento() {
 
     try {
       const response = await fetch(
-        `https://barbearia-freitas.vercel.app/cancelar-agendamento/${idAgendamento}`,
+        `https://projeto-barbearia-7iyi.vercel.app/cancelar-agendamento/${idAgendamento}`,
         {
           method: "DELETE",
         }
