@@ -19,7 +19,7 @@ function CancelarAgendamento() {
 
     try {
       const response = await fetch(
-        `https://backend-production-4037.up.railway.app/cancelar-agendamento/${idAgendamento}`,
+        `backend-production-4037.up.railway.app/cancelar-agendamento/${idAgendamento}`,
         {
           method: "DELETE",
         }
