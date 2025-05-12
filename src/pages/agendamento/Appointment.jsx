@@ -39,10 +39,10 @@ function Agendamento() {
 
     // credenciais do banco de dados
     const agendamento = {
-      nome_cliente: nome,
+      nomeCliente: nome,
       telefone,
       email,
-      data_agendamento: data,
+      dataAgendamento: data,
       horario,
       servico,
       barbeiro,
