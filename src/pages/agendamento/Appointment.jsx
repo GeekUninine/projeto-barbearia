@@ -51,7 +51,7 @@ function Agendamento() {
     //envia dados para o banco de dados
     try {
       const response = await fetch(
-        "backend-production-4037.up.railway.app/agendar",
+        "https://backend-production-4037.up.railway.app/agendar",      
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
